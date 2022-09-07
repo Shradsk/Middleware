@@ -1,0 +1,21 @@
+{
+  "name": "m1_assignment1",
+  "version": "1.0.0",
+  "description": "assign1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "module"
+  },
+  "author": "Shraddha Kumbharkar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsdom": "^20.0.0",
+    "math": "^0.0.3",
+    "mssql": "^9.0.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
