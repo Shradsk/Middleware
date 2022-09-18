@@ -1,63 +1,42 @@
+const data = require("./data");
+
+const datafile = data.Loan;
 const httpServer = require('http');
 const url = require('url');
-const fs = require('fs');
-const express = require('express');
 
-const tempLoan = fs.readFileSync(
-    `${__dirname}/data/data.json`,
-    'utf-8'
-);
-//Template
-const templateHTMLCourse = fs.readFileSync(
-    `${__dirname}/template/templateLoan.html`,
-    'utf-8'
-);
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const dom = new JSDOM(templateHTMLCourse);
-
-//Create Server
-// const replaceTemplate = require('./modules/TemplateLoan');
-
-// const tempCourse = require('./data/data.json');
-// const app = express();
-// //Sending the whole request back to the client
-//  app.get('/',function(req, res){
-//     res.send('Hi There');
-//  });
+const server = httpServer.createServer((req,res)=>{ //call back function
+    // console.log(datafile);
+   const {query, pathname} = url.parse(req.url, true); 
     
-//     const PORT = 8000;
-//     app.listen(PORT, function() {
-//         console.log(`The server is running the port ${PORT}`);
-//     });
-//const { monitorEventLoopDelay } = require('perf_hooks');
-const dataObj = JSON.parse(tempLoan);// string to JavaScript Object JSON
+   if(query.id){//if there is query parameter named id
+    //Loan page
+    if(pathname === '/' || pathname.toLowerCase() === '/loan'){
+        res.writeHead(200, { //Everythin ran successfully 
+            'Content-type' : 'text/html'
+        });
+        var queryId = parseInt(query.id);
+        function calculatedLoanAmount (queryId){
+        var loanAmount;
+        datafile[queryId].loanAmount = datafile[queryId].monthlyPayment*((1+datafile[queryId].interest)**datafile[queryId].loanTermYears)*((((1+datafile[queryId].interest)**datafile[queryId].loanTermYears)-1)/datafile[queryId].interest)
+        console.log(datafile[queryId].loanAmount);
+        }
 
-const server = httpServer.createServer(function(req, res) {
-    const {query, pathname} = url.parse(req.url, true); // object distructors
-    if(query.id){
-        // if there is query parameter named id read as string
-        // Courses page
-        if (pathname === '/' || pathname.toLowerCase() === '/loan') {
-            res.writeHead(200, {// Every thing ran successfully
-                'Content-type': 'text/html'
-            });
-            const loan = dataObj[Number(query.id)];// convert string to numeric value
-            //console.log(loan.interest);
-            const courseHTML = replaceTemplate(templateHTMLCourse, loan);
-            
-            res.end(courseHTML);
+        //console.log(calculatedLoanAmount(queryId))
+        var sum = 0
+        for(i=0;i<5;i++){
+            datafile[i].loanAmount = datafile[i].monthlyPayment*((1+datafile[i].interest)**datafile[i].loanTermYears)*((((1+datafile[i].interest)**datafile[i].loanTermYears)-1)/datafile[i].interest);
+            sum = sum + datafile[i].loanAmount
+            //console.log(datafile[i].loanAmount);
         }
+        console.log(`Grand total:${sum}`);
     }
-    else{
-            res.writeHead(404, {// Server did not find what you were looking for
-                'Content-type': 'text/html'
-            });
-            res.end(`resource not found`)
-        }
-});
-//Start listening to requests
-server.listen(8000, 'localhost', () => {
-console.log('Listening to request on port 8000');
-});
-//=> is called fat arrow function or lamda
+}       
+            res.end('Hello');
+ });
+   
+//Start Listening to Requests
+server.listen(8000,'localhost', ()=>{
+
+    console.log(`Listening to requests on port 8000`);
+}); 
+

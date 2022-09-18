@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <title>Loan</title>
 
     <style>
@@ -116,46 +115,31 @@
       <h1>📚 LOAN PAGE 📚</h1>
       <figure class="course">
   
-        <h2 class="course__name">{%DESCRIPTION%}</h2>
-        <div class="course__info">
-          <p>Loan Type: {%LOANTYPE%}
-            Identification Number : {%ID%}
-          </p>
+        <h2 class="loan__name">{%CUSTOMERNAME%}</h2>
+        <div class="loan__info">
+          <span class="emoji-left">➡</span>Monthly Payment: ${%MONTHLYPAYMENT%}
+        </div>       
+        <div class="loan__info">
+             <span><class="emoji-left">➡</span>Interest: {%INTEREST%}% 
         </div>
-
-        <div class="course__info">
-          <p>Customer Name: {%CUSTOMERNAME%}</p>
+        <div class="loan__info">
+          <span><class="emoji-left">➡</span>Loan Term Years: {%LOANTERMYEARS%} 
         </div>
-
-        <div class="course__info">
-          <p>Phone Number: {%PHONENUMBER%}</p>
+        <div class="loan__info">
+          <span><class="emoji-left">➡</span>Loan Type : {%LOANTYPE%}
+        </div>        
+        <p class="loan__info">
+          Description : {%DESCRIPTION%}
+        </p>
+        <p class="loan__info">
+          Address: {%ADDRESS%}
+        </p>    
+        <div class="loan__info">
+          Phone Number: +1{%PHONENUMBER%}
         </div>
-        
-        <div class="course__info">
-          <p>Address: {%ADDRESS%}</p>
+        <div class="loan__info">
+          <h3>Calculated Loan Amount: ${%LOANAMOUNT%}</h3>
         </div>
-
-        <div class="course__info"> 
-          <p>Loan Amount: {%LOANAMOUNT%}</p>
-        </div>
-
-         
-        <div class="course__info">
-          <h2 id="loanAmount">Present Value : {%PRESENTVALUE%}</h2>
-        </div>
-
-        <div class="course__info">
-          <p>Interest Rate: {%INTEREST%}</p>
-        </div>
-
-        <div class="course__info">
-          <P>Loan Terms: {%LOANTERMS%}</P>
-        </div>
-
-        <div class="course__info">
-          <p>Loan Type: {%LOANTYPE%}</p>
-        </div>   
-        
       </figure>
     </div>
   </body>
