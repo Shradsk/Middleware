@@ -1,0 +1,18 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+use('mongodbVSCodePlaygroundDB');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.loans.drop();
+
+// Insert a few documents into the loans collection.
+db.loans.insertMany([
+  { '_id': 1, 'customername': 'Shraddha', 'phoneNumber': 8155843561, 'address': 'Arizona', 'loanAmount':2021, 'intrest':3, 'loanTermYears': 7, 'loanType': 'Eduction Loan', 'description': 'to Study at ASU','createdDate': new Date('2022-08-10T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00') },
+  { '_id': 2, 'customername': 'Smrea', 'phoneNumber': 6822144712, 'address': 'Europe', 'loanAmount':200, 'intrest':7, 'loanTermYears': 10, 'loanType': 'Buisness Loan', 'description': 'to expand bakery store', 'createdDate': new Date('2022-08-10T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00')},
+  { '_id': 3, 'customername': 'Sankeeth', 'phoneNumber': 7854789631, 'address': 'Ireland', 'loanAmount':170, 'intrest':6, 'loanTermYears': 4, 'loanType': 'Car Loan', 'description': 'to buy bugati car', 'createdDate': new Date('2022-08-10T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00')  },
+  { '_id': 4, 'customername': 'Kethan', 'phoneNumber': 1254789635, 'address': 'India', 'loanAmount':300, 'intrest':2, 'loanTermYears': 3, 'loanType': 'Home Loan', 'description': 'to buy new home','createdDate':new Date('2022-08-10T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00')},
+  { '_id': 5, 'customername': 'Suvarna', 'phoneNumber': 8745963125, 'address': 'Canada', 'loanAmount':785, 'intrest':6, 'loanTermYears': 8, 'loanType': 'Industry Loan', 'description': 'to buy ne equipments for factory', 'createdDate': new Date('2022-08-10T08:00:00Z'), 'insertedDate': new Date('2022-08-10T07:00:00.000+00:00')}, 
+]);
+
