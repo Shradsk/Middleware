@@ -1,0 +1,66 @@
+[
+    {
+    "_Id" : 0,
+    "customerName" : "Vaishnavi Kolte",
+    "phoneNumber": 8526085260,
+    "address":"Parvati",
+    "loanAmount": 12168,
+    "interest": 6,
+    "loanTermYears": 3,
+    "loanType": "Personal Loan",
+    "description": "LOAN FOR BUYING A PLOT"
+
+  }, 
+  {
+
+  "_Id": 1,
+  "customerName" : "Ashwini Dhavare",
+  "phoneNumber": 9623540401,
+  "address":"Parvati",
+  "loanAmount": 12132,
+  "interest": 8,
+  "loanTermYears": 10,
+  "loanType": "Education Loan",
+  "description": "EDUCATION LOAN"
+     
+  },
+
+  {
+
+    "_Id": 2,
+    "customerName" : "Asha Khade",
+    "phoneNumber": 9623540409,
+    "address":"Peth",
+    "loanAmount": 84011,
+    "interest": 12,
+    "loanTermYears": 15,
+    "loanType": "business loan",
+    "description": "LOAN FOR BUSINESS"
+       
+    },
+    {
+
+      "_Id": 3,
+      "customerName" : "Neha Kakkar",
+      "phoneNumber": 9850540401,
+      "address":"Kothrud",
+      "loanAmount": 9568,
+      "interest": 4,
+      "loanTermYears": 7,
+      "loanType": "car loan",
+      "description": "CAR LOAN"
+         
+      },
+      {
+
+        "_Id": 4,
+        "customerName" : "Ketaki Kakade",
+        "phoneNumber": 9623555000,
+        "address":"Hinjewadi",
+        "loanAmount": 41135,
+        "interest": 7,
+        "loanTermYears": 12,
+        "loanType": "Home loan",
+        "description": "HOME LOAN"        
+    }
+]

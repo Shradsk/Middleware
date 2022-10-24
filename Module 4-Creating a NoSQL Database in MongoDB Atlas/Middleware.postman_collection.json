@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "c2f533c7-037a-407e-ac6b-30c4327dc525",
+		"name": "Middleware",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23227630"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n      \"_id\": 1,\r\n      \"customerName\": \"Ashwini Dhavare\",\r\n      \"phoneNumber\": 9623540401,\r\n      \"address\": \"Parvati\",\r\n      \"loanAmount\": 12132,\r\n      \"interest\": 8,\r\n      \"loanTermYears\": 10,\r\n      \"loanType\": \"Education Loan\",\r\n      \"description\": \"EDUCATION LOAN\"\r\n  },  \r\n  {\r\n      \"_id\": 2,\r\n      \"customerName\": \"Asha Khade\",\r\n      \"phoneNumber\": 9623540409,\r\n      \"address\": \"Peth\",\r\n      \"loanAmount\": 84011,\r\n      \"interest\": 12,\r\n      \"loanTermYears\": 15,\r\n      \"loanType\": \"business loan\",\r\n      \"description\": \"LOAN FOR BUSINESS\"\r\n  },\r\n  {\r\n      \"_id\": 3,\r\n      \"customerName\": \"Neha Kakkar\",\r\n      \"phoneNumber\": 9850540401,\r\n      \"address\": \"Kothrud\",\r\n      \"loanAmount\": 9568,\r\n      \"interest\": 4,\r\n      \"loanTermYears\": 7,\r\n      \"loanType\": \"car loan\",\r\n      \"description\": \"CAR LOAN\"\r\n  },\r\n  {\r\n      \"_id\": 4,\r\n      \"customerName\": \"Ketaki Kakade\",\r\n      \"phoneNumber\": 9623555000,\r\n      \"address\":Hinjewadi \"\",\r\n      \"loanAmount\": 41135,\r\n      \"interest\": 7,\r\n      \"loanTermYears\": 12,\r\n      \"loanType\": \"Home loan\",\r\n      \"description\": \"HOME LOAN\"\r\n  }              \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/loan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/loan/4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"customerName\": \"Ketaki Kakade\""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/loan/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"customerName\": \"Shraddha Kumbharkar\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/loan/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/loan/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/loan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

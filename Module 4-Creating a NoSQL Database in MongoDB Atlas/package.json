@@ -1,0 +1,19 @@
+{
+  "name": "nacourses",
+  "version": "1.0.0",
+  "description": "Learning node, express and mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "IFT-598 Jenil",
+  "license": "SEE LICENSE IN M4Assign2",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.7",
+    "morgan": "^1.10.0"
+  }
+}
