@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Ashwini Dhavare",
+    "email": "ash@gmail.com",
+    "role": "admin",
+    "active": true,
+    "password": "A12345"
+  },
+  {
+    "name": "Sunidhi Chavan",
+    "email": "sunidhi@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "Sc123"
+  },
+  {
+    "name": "Nathan Scott",
+    "email": "nats@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "Nats12345"
+  },
+  {
+    "name": "Sophia Thomas",
+    "email": "thomas@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "Sophia2512"
+  },
+  {
+    "name": "Harley Wilson",
+    "email": "wilson@gmail.com",
+    "role": "guide",
+    "active": true,
+    "password": "HW123"
+  }
+]
