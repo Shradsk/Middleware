@@ -1,0 +1,66 @@
+[
+  {
+  "_Id" : 0,
+  "customerName" : "Shraddha Kumbharkar",
+  "phoneNumber": 9878685848,
+  "address":"Tempe",
+  "loanAmount": 250,
+  "interest": 13,
+  "loanTermYears": 4,
+  "loanType": "Student Loan",
+  "description": "Educational Loan"
+
+}, 
+{
+
+"_Id": 1,
+"customerName" : "Suvarna Rote",
+"phoneNumber": 9623009528,
+"address":"Austin",
+"loanAmount": 100,
+"interest": 12,
+"loanTermYears": 2,
+"loanType": "Personal Loan",
+"description": "Personal Loan"
+   
+},
+
+{
+
+  "_Id": 2,
+  "customerName" : "Neha Thomas",
+  "phoneNumber": 9623009528,
+  "address":"Georgia",
+  "loanAmount": 120,
+  "interest": 10,
+  "loanTermYears": 5,
+  "loanType": "Car loan",
+  "description": "Car loan"
+     
+  },
+  {
+
+    "_Id": 3,
+    "customerName" : "Ketaki Atale",
+    "phoneNumber": 6056821212,
+    "address":"Phoenix",
+    "loanAmount": 725,
+    "interest": 15,
+    "loanTermYears": 3,
+    "loanType": "business Loan",
+    "description": "business Loan"
+       
+    },
+    {
+
+      "_Id": 4,
+      "customerName" : "Surendra Kumbharkar",
+      "phoneNumber": 9850770409,
+      "address":"Miami",
+      "loanAmount": 170,
+      "interest": 5,
+      "loanTermYears": 2,
+      "loanType": "Provident fund Loan",
+      "description": "Loan for Provident fund"        
+  }
+]

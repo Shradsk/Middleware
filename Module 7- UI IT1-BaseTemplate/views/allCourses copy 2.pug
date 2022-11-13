@@ -1,0 +1,26 @@
+| extends baseTemplate block content h1 This is dynamic loans Overview
+
+div
+  | 
+
+th(scope="col") Serial Number th(scope="col") Applicant Name th(scope="col") Phone Number th(scope="col") Address th(scope="col") Monthly Payment th(scope="col") Loan Amount th(scope="col") Loan Term Years th(scope="col") Loan Type th(scope="col") Description
+
+each loans in laon
+
+  table.table-header
+    thead
+      tr
+        th(scope="ID") #
+    tbody
+      tr.table-secondary
+        td.
+          #{loans.id}
+          
+        td #{loans.serialnumber}
+        td #{loans.applicantname}
+        td #{loans.phonenumber}
+        td #{loans.monthlypayment}
+        td #{loans.loanamount}
+        td #{loans.loantermyears}
+        td #{loans.loantype}
+        td #{loans.description}
