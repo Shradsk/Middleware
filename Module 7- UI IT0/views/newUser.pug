@@ -1,0 +1,47 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(href="https://fonts.googleapis.com/css?family=Oswald:300,400,400i,700", rel="stylesheet")
+link(rel="stylesheet", href="css/style.css")
+link(rel="shortcut icon", type="image/png", href="img/favicon.png")
+title New Loan
+//  <section class="overview"> 
+main.main
+  .card-container
+    .card
+      .card__header
+        .card__details
+          h4.card__sub-heading New Loan
+          p.card__text.
+            
+            Please enter the following Details
+            
+          form(action="/newCourse")
+            label(for="cname") Applicant Name:
+            input#cname(type="text", name="cname")
+            br
+            br
+            label(for="number") Phone Number:
+            input#number(type="number")
+            br
+            br
+            label(for="description") Address:
+            input#description(type="description", name="description")
+            br
+            br
+            label(for="number") Loan Amount:
+            input#number(type="number")
+            br
+            br
+            label(for="description") Loan Term Years:
+            input#description(type="description", name="description")
+            br
+            br
+            label(for="description") Loan Type:
+            input#description(type="description", name="description")
+            br
+            br
+            label(for="description") Description:
+            input#description(type="description", name="description")
+            br
+            br
+            input.card__sub-heading(type="submit", value="Submit")
